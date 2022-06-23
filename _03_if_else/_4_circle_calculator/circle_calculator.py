@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import simpledialog, Tk
 import math
+import turtle
 
 window_width = 600
 window_height = 600
@@ -12,11 +13,13 @@ window_height = 600
 
 window = Tk()
 window.withdraw()
+Mikey = turtle.Turtle()
 
 radius = simpledialog.askinteger(title='Make a circle!', prompt="Put in the amount of pixels you want for your circle")
 answer = simpledialog.askstring(title='What do you want to calculate?', prompt="Do you want to find the Area or the Circumference?")
 Area = math.pi*radius*radius
 Circumference = math.pi*radius*2
 if answer == "Area":
-    canvas.create_circle(75, 200, 400, 450, fill="Area", outline="")
-else:
+   Mikey.circle(Area)
+if answer == "Circumference":
+    Mikey.circle(Circumference)
