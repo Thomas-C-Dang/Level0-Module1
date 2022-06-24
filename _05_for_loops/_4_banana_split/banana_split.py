@@ -15,7 +15,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
+canvas = tk.Canvas(root, width=500, height=500, bg="#FF00FF");
 canvas.grid()
 
 '''
@@ -24,6 +24,10 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
-
+canvas.create_text(100, 60, text="Ice cream", font=("Arial", 16))
+canvas.create_text(100, 45, text="Ice cream", font=("Arial", 16))
+canvas.create_text(100, 30, text="Ice cream", font=("Arial", 16))
+canvas.create_text(100, 15, text="Ice cream", font=("Arial", 16))
+canvas.create_text(100, 75, text="Banana", font=("Arial", 16))
 
 root.mainloop()
